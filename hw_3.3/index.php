@@ -74,7 +74,7 @@ require_once 'app/autoloader.php';
         ?>
         </tbody>
     </table>
-    <input type="submit" class="btn btn-primary" value="Оформить заказ">
+    <input type="submit" class="btn btn-primary" value="Перейти в корзину">
     <input type="reset" class="btn btn-default" value="Очистить форму">
 <form>
 </div>
