@@ -7,14 +7,12 @@ use \classes\GetInfoProduct;
 class Tech extends Product implements GetInfoProduct
 { 
   private $model; 
-  private $weight;
-
+  
   public function __construct($title, $price, $model) 
   { 
     $this->title = $title;
     $this->price = $price;
     $this->model = $model; 
-      
   }
 
   public function getInfoProduct()
