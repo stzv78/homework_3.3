@@ -25,8 +25,8 @@ class Order
 		echo "<h2>Заказ №" . self :: $id . " от " . $this->date . "</h2></br>";
 		echo "Состав заказа:";
 		echo "<table border = '1'>";
-		foreach ($this->content as $value) {
-			echo "<tr><td>" . ++$n . " </td><td>" . $value[0] . "</td><td>" . $value[1] . " </td><td>" . $value[2]. " руб. </td></tr>";
+		foreach ($this->content as $key => $value) {
+			echo "<tr><td>" . $value[0] . "</td><td>" . $value[1] . " </td><td>" . $value[2]. " руб. </td></tr>";
 		}
 		echo "</table>";
 		echo "<h4>Сумма заказа: " . $this->sum . " рублей</h4>";
