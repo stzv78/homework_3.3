@@ -8,13 +8,14 @@ class Food extends Product implements GetInfoProduct
   protected $countryFrom;
   private $weight;
   
-  public function __construct($title, $countryFrom, $price, $weight) 
+  public function __construct($title, $countryFrom, $price, $weight, $count) 
   { 
     $this->title = $title;
     $this->countryFrom = $countryFrom;
     $this->price = $price;
     $this->weight = $weight; //вес в кг
     $this->setDiscount();
+    $this->setCount($count);
   }
 
   public function getInfoProduct()

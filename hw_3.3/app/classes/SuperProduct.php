@@ -5,6 +5,7 @@ abstract class SuperProduct
 {    
   protected $title; 
   protected $price;
+  protected $count;
   
   public function getTitle()
   {
@@ -14,6 +15,16 @@ abstract class SuperProduct
   public function getPrice()
   {
     return $this->price;
+  }
+
+  public function getCount()
+  {
+    return $this->count;
+  }
+
+  public function setCount($count)
+  {
+    $this->count = $count;
   }
 
   abstract function getDiscountPrice();

@@ -8,11 +8,12 @@ class Weels extends Product implements GetInfoProduct
 {
   private $size; 
  
-  public function __construct($title, $size, $price) 
+  public function __construct($title, $size, $price, $count) 
   { 
     $this->title = $title;
     $this->price = $price;
     $this->size = $size;
+    $this->setCount($count);
   }
 
   public function getInfoProduct()

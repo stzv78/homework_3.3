@@ -8,11 +8,12 @@ class Tech extends Product implements GetInfoProduct
 { 
   private $model; 
   
-  public function __construct($title, $price, $model) 
+  public function __construct($title, $price, $model, $count) 
   { 
     $this->title = $title;
     $this->price = $price;
     $this->model = $model; 
+    $this->setCount($count);
   }
 
   public function getInfoProduct()

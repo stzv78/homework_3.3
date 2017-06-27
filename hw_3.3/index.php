@@ -27,13 +27,13 @@ require_once 'app/autoloader.php';
         </thead>
         <tbody>
         <?php  
-        $list[] = new classes\tech\Tech('Телевизор нового поколения', 30000, 'LG');
-        $list[] = new classes\tech\Tech('Стиральная машина', 12600, 'LG1250');
-        $list[] = new classes\weels\Weels('Резина летняя Dunlop SP Winter Sport 400','175/70 R13', 1930);
-        $list[] = new classes\weels\Weels('Резина летняя Kumho Ecowing ES01 KH27','165/60 R14', 2330);
-        $list[] = new classes\weels\Weels('Резина летняя Tigar Sigura','165/60 R14', 2420);
-        $list[] = new classes\food\Food('Огурцы','Россия', 120, 4);
-        $list[] = new classes\food\Food('Киви','Египет', 140, 15);
+        $list[] = new classes\tech\Tech('Телевизор нового поколения', 30000, 'LG', 5);
+        $list[] = new classes\tech\Tech('Стиральная машина', 12600, 'LG1250', 8);
+        $list[] = new classes\weels\Weels('Резина летняя Dunlop SP Winter Sport 400','175/70 R13', 1930, 6);
+        $list[] = new classes\weels\Weels('Резина летняя Kumho Ecowing ES01 KH27','165/60 R14', 2330, 4);
+        $list[] = new classes\weels\Weels('Резина летняя Tigar Sigura','165/60 R14', 2420, 6);
+        $list[] = new classes\food\Food('Огурцы','Россия', 120, 4, 25);
+        $list[] = new classes\food\Food('Киви','Египет', 140, 15, 60);
 
         foreach ($list as $key => $value) {
             $item[] = serialize($value);
